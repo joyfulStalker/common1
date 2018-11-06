@@ -42,7 +42,8 @@ public class ResponsePageResult extends BaseResponseResult {
 
 	@Override
 	public String toString() {
-		return "ResponsePageResult [data=" + data + ", total=" + total + "]";
+		return "ResponsePageResult [total=" + total + ", data=" + data + ", resultCode=" + resultCode + ", errMsg="
+				+ errMsg + ", elapsedMilliseconds=" + elapsedMilliseconds + "]";
 	}
 
 }

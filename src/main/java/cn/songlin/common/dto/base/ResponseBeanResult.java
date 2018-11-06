@@ -35,7 +35,8 @@ public class ResponseBeanResult<T> extends BaseResponseResult {
 
 	@Override
 	public String toString() {
-		return "ResponseBeanResult [data=" + data + "]";
+		return "ResponseBeanResult [data=" + data + ", resultCode=" + resultCode + ", errMsg=" + errMsg
+				+ ", elapsedMilliseconds=" + elapsedMilliseconds + "]";
 	}
 
 }
