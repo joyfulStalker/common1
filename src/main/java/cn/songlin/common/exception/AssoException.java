@@ -18,4 +18,7 @@ public class AssoException extends BizException {
 	
 	//10022开头的为订单相关
 	public static final BizException ORDER_CREATE_FAILE = new BizException(10022001, "单号创建失败，请联系管理员");
+	
+	//10023 权限菜单相关
+	public static final BizException PLE_CONF_MENU = new BizException(10023001, "还没有菜单，请配置！");
 }
