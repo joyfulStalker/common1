@@ -21,4 +21,7 @@ public class AssoException extends BizException {
 	// 10023 权限菜单相关
 	public static final BizException PLE_CONF_MENU = new BizException(10023001, "还没有该菜单，请配置！");
 	public static final BizException DUPLICATE_PATH = new BizException(10023002, "路径重复，请修改！");
+	public static final BizException NO_PATH = new BizException(10023003, "路径不能为空！");
+	public static final BizException NO_NAME = new BizException(10023004, "名称不能为空！");
+	public static final BizException NO_COMPONENT = new BizException(10023005, "组件名不能为空！");
 }
