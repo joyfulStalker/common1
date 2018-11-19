@@ -3,7 +3,7 @@ package cn.songlin.common.dto;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UserAccount implements Serializable {
+public class LocalUser implements Serializable {
 
 	private static final long serialVersionUID = -8868821553907742920L;
 
