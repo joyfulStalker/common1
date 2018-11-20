@@ -25,4 +25,8 @@ public class AssoException extends BizException {
 	public static final BizException NO_PATH = new BizException(10023003, "路径不能为空！");
 	public static final BizException NO_NAME = new BizException(10023004, "名称不能为空！");
 	public static final BizException NO_COMPONENT = new BizException(10023005, "组件名不能为空！");
+	
+	
+	// 10024权限菜单相关
+	public static final BizException ERR_OLD_PWD = new BizException(10024001, "旧密码输入错误！");
 }

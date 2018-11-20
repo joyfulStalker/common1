@@ -36,7 +36,7 @@ public class MyStringUtils {
 	 */
 
 	public static String getMd5(String target) {
-		return DigestUtils.md5DigestAsHex(target.getBytes()).toString();
+		return target == null ? null : DigestUtils.md5DigestAsHex(target.getBytes()).toString();
 	}
 
 	public static String[] chars = new String[] { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n",
