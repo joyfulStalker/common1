@@ -10,6 +10,7 @@ public class AssoException extends BizException {
 	public static final BizException NOT_EMAIL = new BizException(10010003, "邮箱输入不正确");
 	public static final BizException HIT_SENSITIVEWORD = new BizException(10010004, "请遵守社群规范");
 	public static final BizException PLE_LOGIN = new BizException(10010005, "请登录！");
+	public static final BizException FAILED_LOGIN = new BizException(10010006, "登录失败！");
 
 	// 10021开头的为错误收集功能相关的
 	public static final BizException NO_ERR_DESCRIPTION = new BizException(10021001, "请填写错误描述");
@@ -25,8 +26,9 @@ public class AssoException extends BizException {
 	public static final BizException NO_PATH = new BizException(10023003, "路径不能为空！");
 	public static final BizException NO_NAME = new BizException(10023004, "名称不能为空！");
 	public static final BizException NO_COMPONENT = new BizException(10023005, "组件名不能为空！");
-	
-	
-	// 10024权限菜单相关
+
+	// 10024用户相关
 	public static final BizException ERR_OLD_PWD = new BizException(10024001, "旧密码输入错误！");
+	public static final BizException NOTALLOWED_CHANGE = new BizException(10024002, "用户信息只允许修改自己的！");
+
 }

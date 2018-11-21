@@ -57,10 +57,9 @@ public class LocalUser implements Serializable {
 	private Date lastLoginDate;
 
 	/**
-	 * 性别
+	 * 性别(1: 男 2 女)
 	 */
-	private Boolean sex;
-
+	private Integer sex;
 	/**
 	 * 地址
 	 */
@@ -298,21 +297,18 @@ public class LocalUser implements Serializable {
 	}
 
 	/**
-	 * 获取性别
-	 *
-	 * @return sex - 性别
+	 * 获取性别(1: 男 2 女)
 	 */
-	public Boolean getSex() {
+	public Integer getSex() {
 		return sex;
 	}
 
 	/**
-	 * 设置性别
-	 *
+	 * 获取性别(1: 男 2 女)
+	 * 
 	 * @param sex
-	 *            性别
 	 */
-	public void setSex(Boolean sex) {
+	public void setSex(Integer sex) {
 		this.sex = sex;
 	}
 
