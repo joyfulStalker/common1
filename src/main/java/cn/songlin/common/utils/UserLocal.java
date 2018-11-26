@@ -12,8 +12,8 @@ public class UserLocal {
 	public static LocalUser getLocalUser() {
 		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
 				.getRequest();
-		Object attribute = request.getSession().getAttribute("sessionId");
-		System.out.println(attribute);
+//		Object attribute = request.getSession().getAttribute("sessionId");
+//		System.out.println(attribute);
 		LocalUser userAccount = (LocalUser) request.getSession().getAttribute("sessionId");
 
 		return userAccount == null ? new LocalUser() : userAccount;

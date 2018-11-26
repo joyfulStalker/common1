@@ -30,5 +30,9 @@ public class AssoException extends BizException {
 	// 10024用户相关
 	public static final BizException ERR_OLD_PWD = new BizException(10024001, "旧密码输入错误！");
 	public static final BizException NOTALLOWED_CHANGE = new BizException(10024002, "用户信息只允许修改自己的！");
+	
+	// 10025任务相关
+	public static final BizException NO_SUCH_TASK = new BizException(10025001, "该任务不存在！");
+	public static final BizException PLE_STOP_FIRST = new BizException(10025002, "修改前请先停止任务！");
 
 }
