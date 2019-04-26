@@ -64,6 +64,8 @@ public class LocalUser implements Serializable {
 	 * 地址
 	 */
 	private String address;
+	
+	private String token;
 
 	/**
 	 * 获取主键id
@@ -329,6 +331,14 @@ public class LocalUser implements Serializable {
 	 */
 	public void setAddress(String address) {
 		this.address = address;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
 	}
 
 	@Override

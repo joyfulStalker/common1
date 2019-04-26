@@ -1,3 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 cn.songlin.common.aop.MonitorAspect,\
-cn.songlin.common.conf.GlobalExceptionHandler
+cn.songlin.common.conf.GlobalExceptionHandler,\
+cn.songlin.common.conf.RedisSessionConfig,\
+cn.songlin.common.utils.RedisUtil
