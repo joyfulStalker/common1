@@ -21,7 +21,10 @@ public class UserLocal {
 		HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes())
 				.getRequest();
 		String token = request.getHeader("Authorization");
-		LocalUser userAccount = (LocalUser) redisUtil.hget(ConstantUtil.REDIS_USER_SESSIONID, token);
+		LocalUser userAccount = null;
+		if(token != null) {
+			userAccount = (LocalUser) redisUtil.hget(ConstantUtil.REDIS_USER_SESSIONID, token);
+		}
 		return userAccount == null ? new LocalUser() : userAccount;
 	}
 

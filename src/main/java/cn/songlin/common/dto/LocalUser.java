@@ -64,8 +64,19 @@ public class LocalUser implements Serializable {
 	 * 地址
 	 */
 	private String address;
-	
+
+	/**
+	 * token
+	 */
 	private String token;
+	/**
+	 * token有效期
+	 */
+	private long tokenExpireTime;
+	/**
+	 * 当前系统时间
+	 */
+	private long systemTime;
 
 	/**
 	 * 获取主键id
@@ -79,8 +90,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置主键id
 	 *
-	 * @param id
-	 *            主键id
+	 * @param id 主键id
 	 */
 	public void setId(Long id) {
 		this.id = id;
@@ -98,8 +108,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置SSO的USER表id
 	 *
-	 * @param userId
-	 *            SSO的USER表id
+	 * @param userId SSO的USER表id
 	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
@@ -187,8 +196,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置创建时间
 	 *
-	 * @param createDate
-	 *            创建时间
+	 * @param createDate 创建时间
 	 */
 	public void setCreateDate(Date createDate) {
 		this.createDate = createDate;
@@ -206,8 +214,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置更新时间
 	 *
-	 * @param updateDate
-	 *            更新时间
+	 * @param updateDate 更新时间
 	 */
 	public void setUpdateDate(Date updateDate) {
 		this.updateDate = updateDate;
@@ -225,8 +232,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置用户类型：1：普通用户 2：媒体用户 3：官方用户
 	 *
-	 * @param userType
-	 *            用户类型：1：普通用户 2：媒体用户 3：官方用户
+	 * @param userType 用户类型：1：普通用户 2：媒体用户 3：官方用户
 	 */
 	public void setUserType(Byte userType) {
 		this.userType = userType;
@@ -272,8 +278,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置注册时间
 	 *
-	 * @param registerDate
-	 *            注册时间
+	 * @param registerDate 注册时间
 	 */
 	public void setRegisterDate(Date registerDate) {
 		this.registerDate = registerDate;
@@ -291,8 +296,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置最后登录时间
 	 *
-	 * @param lastLoginDate
-	 *            最后登录时间
+	 * @param lastLoginDate 最后登录时间
 	 */
 	public void setLastLoginDate(Date lastLoginDate) {
 		this.lastLoginDate = lastLoginDate;
@@ -326,8 +330,7 @@ public class LocalUser implements Serializable {
 	/**
 	 * 设置地址
 	 *
-	 * @param address
-	 *            地址
+	 * @param address 地址
 	 */
 	public void setAddress(String address) {
 		this.address = address;
@@ -339,6 +342,22 @@ public class LocalUser implements Serializable {
 
 	public void setToken(String token) {
 		this.token = token;
+	}
+
+	public long getTokenExpireTime() {
+		return tokenExpireTime;
+	}
+
+	public void setTokenExpireTime(long tokenExpireTime) {
+		this.tokenExpireTime = tokenExpireTime;
+	}
+
+	public long getSystemTime() {
+		return System.currentTimeMillis();
+	}
+
+	public void setSystemTime(long systemTime) {
+		this.systemTime = systemTime;
 	}
 
 	@Override
