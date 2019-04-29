@@ -353,7 +353,7 @@ public class LocalUser implements Serializable {
 	}
 
 	public long getSystemTime() {
-		return System.currentTimeMillis();
+		return this.systemTime;
 	}
 
 	public void setSystemTime(long systemTime) {
